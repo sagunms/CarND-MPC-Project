@@ -65,7 +65,7 @@ class FG_eval {
       // Smooth steering commands between iterations
       fg[0] += 700 * CppAD::pow(vars[delta_start + t + 1] - vars[delta_start + t], 2);
       // Smooth acceleration/break commands between iterations
-      fg[0] += 10 * CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);
+      fg[0] += 20 * CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);
     }
 
     // Init fg vector indexes that represent state & actuator vars

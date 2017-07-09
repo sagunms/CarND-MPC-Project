@@ -45,14 +45,14 @@ My cost function is as follows:
 ```
 Cost = (cte)^2 + (epsi)^2 + 
         (v - velocity_desired)^2 + 
-        5*(delta)^2 + 5*(a)^2 + 
+        1*(delta)^2 + 10*(a)^2 + 
         700*(delta - delta_prev)^2 + 20*(a - a_prev)^2
 ```
 
 * `(cte)^2` - Cross track error impacts cost function 
 * `(epsi)^2` - Error of vehicle orientation impacts cost function. It is difference between current psi and desired psi in the current point.
 * `(v - v_desired)^2` - Drive with desired velocity and penalise stopping
-* `1 * (delta)^2` and `5 * (a)^2` - Penalise use of actuators values
+* `1 * (delta)^2` and `10 * (a)^2` - Penalise use of actuators values
 * `700 * (delta - delta_prev)^2` - Smooth steering commands between iterations
 * `20 * (a - a_prev)^2` - Smooth acceleration/break commands between iterations
 
