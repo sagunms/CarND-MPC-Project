@@ -56,9 +56,7 @@ Cost = (cte)^2 + (epsi)^2 +
 
 ### Timestep Length (N) and Elapsed Duration (dt)
 
-The model works by creating a reference trajectory for T seconds ahead on the horizon of current vehicle position (T = N * dt). Larger T means longer horizon and smoother changes over time. However, it can also be computationally expensive and also can cause large deviations in tracking as  horizon can change a lot. On the contrary, smaller T means shorter horizons and less smooth changes over time. But is faster computationally with more accuracy. 
-
-Initially, I ran the simulation with the values (N=25, dt=0.05) but the car went through extreme turns went out of the track.  After some experimentation and tweaks, (N=10, dt=0.1) seem to work quite well with my final cost function mentioned earlier. It also uses computation because of smaller N and larger dt.
+The model works by creating a reference trajectory for T seconds ahead on the horizon of current vehicle position (T = N * dt). Larger T means longer horizon and smoother changes over time. However, it can also be computationally expensive and also can cause large deviations in tracking as  horizon can change a lot. On the contrary, smaller T means shorter horizons and less smooth changes over time. But is faster computationally with more accuracy. I ran the simulation with the values (N=20, dt=0.05) and it seem to work quite well with my final cost function mentioned earlier. 
 
 ### Polynomial Fitting and MPC Preprocessing
 
