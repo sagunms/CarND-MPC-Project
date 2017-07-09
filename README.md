@@ -1,7 +1,5 @@
 # CarND: Model Predictive Control
 
----
-
 [//]: # (Image References)
 
 [overview]: ./images/overview.gif "Overview"
