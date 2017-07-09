@@ -28,7 +28,6 @@ The MPC uses a simple kinematic model where the equations are as follows:
 ![alt text][mpc-model-equations]
 
 Simulator state variables:
-
 * `x, y` - Vehicle x, y coordinates
 * `psi` - Vehicle rotation angle
 * `v` - Velocity magnitude
@@ -37,7 +36,6 @@ Simulator state variables:
 * `Lf` - Distance between the front of the vehicle and its center of gravity
 
 Actuator variables:
-
 * `cte` - Cross track error
 * `epsi` - Vehicle rotation angle error
 
